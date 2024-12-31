@@ -9,7 +9,7 @@
 \geometry{margin=1in}
 
 % Title and Author
-\title{How do amateur photometric observations of binary star transits compare in precision and reliability to data collected by professional astronomers?}
+\title{Assessing the Scientific Value of Amateur Photometric Observations of Binary Star Transits}
 \author{Thomas Mauran \\\small Polytech Montpellier  \\\small thomas.mauran@etu.umontpellier.fr}
 \date{\today}
 
@@ -26,11 +26,12 @@ Amateur astronomers have increasingly contributed to astronomical research throu
 % Keywords
 \textbf{Keywords:} photometry, binary star systems, amateur astronomy, professional astronomy, data comparison
 
-% skip to the next page
 \newpage
 
 % Table of Contents
 \tableofcontents
+
+\newpage
 
 % Introduction
 \section{Introduction}
@@ -46,9 +47,10 @@ and the challenges inherent in combining data from diverse sources.
 % Problematic
 \subsection{Problematic}
 
-% State of the Art
-\section{State of the Art}
-The field of photometric observation has witnessed significant advancements due to improvements in both professional and amateur technologies. 
+\medskip
+
+% bold 
+\textbf{How do amateur photometric observations of binary star transits compare in precision and reliability to data collected by professional astronomers, and is data collected by amateurs precise enough to contribute to science?}
 
 \section{What are transits?}
 
@@ -113,7 +115,7 @@ To address the research question, this study employs a comparative analysis of p
 \end{enumerate}
 
 % Equipment
-\section{equipment}
+\subsection{Equipment used}
 Specifying the equipment used in the study is essential to understanding the context and limitations of the observations. 
 I employed the following equipment for the photometric observations of U Cephei:
 
@@ -122,17 +124,44 @@ I employed the following equipment for the photometric observations of U Cephei:
     \item Reducer: Sky-Watcher 0.85x Coma Corrector lowering the focal length to 510mm.
     \item Camera: ZWO ASI 585MC pro monochrome CCD camera with a 8.29 MP sensor.
     \item Filters: UV and IR cut filter for reducing light pollution and enhancing contrast.
-    \item Mount: Celestron Celestrong cg-5 goto equatorial mount for tracking and guiding.
+    \item Mount: Celestron Celestrong cg-5 goto equatorial mount for trackin.
+    \item Autoguider: ZWO ASI 120MM mini monochrome camera and 50mm guide scope for guiding.
     \item Software: N.I.N.A for image acquisition and PHD2 guiding software for tracking. AstroImageJ for data analysis.
     \item Light Pollution: Montpellier, Bortle 7 (suburban/urban transition) location with moderate light pollution.
 \end{itemize}
 
-% Star sytem
-\section{U Cephei Binary Star System}
-U Cephei is a well-known binary star system located in the constellation Cepheus. The system consists of a white 
 % Results
 \section{Results}
-The analysis reveals both strengths and limitations in the amateur photometric observations of U Cephei:
+
+\subsection{Light curve}
+
+The first thing to do after collecting the data is to plot it and see if we can see any transit event. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imgs/light-curve.png}
+    \caption{Light curve of U Cephei showing a clear transit event.}
+    \label{fig:light_curve}
+\end{figure}
+
+On the x axis we have the time of the observation in Julian Date (JD), and on the y axis we have the relative flux of the stars.
+
+To understand a bit more those scales I think it is important to take the time to explain each of them.
+\begin{itemize}
+    \item Relative flux: In astronomy the light emited by a star is measured in flux, which is the amount of light received per unit area. Here we are dealing with \textit{normalized relative flux}. 
+    The relative flux is basically the flux of a star compared to other, it is very important in out case because of some pertubations that could affect the light received by the camera, such as clouds, or the moon or the atmosphere.
+    \begin{equation}
+        \text{Relative Flux} = \frac{\text{Flux of the Target Star}}{\text{Flux of the Comparison Star}}
+    \end{equation}
+
+    We also normalize the data to have a relative flux of 1 when the star is not in transit, this way we can see the variation of the flux during the transit.
+    \item Julian Date: The Julian Date is a continuous count of days since the beginning of the Julian Period on January 1, 4713 BC. 
+    It is widely used in astronomy because it is a continuous count of days, allowing for easy comparison of dates and times.
+\end{itemize}
+
+
+\subsection{Conclusion}
+
 \begin{itemize}
     \item Amateur data demonstrated significant precision in detecting transit features, with signal-to-noise ratios that were competitive with professional datasets under optimal conditions.
     \item Light pollution and equipment limitations introduced variability, leading to slightly higher error margins compared to professional datasets.
