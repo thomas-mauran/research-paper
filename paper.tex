@@ -6,6 +6,9 @@
 \usepackage{graphicx}
 \usepackage{cite}
 \usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{float}
+
 \geometry{margin=1in}
 
 % Title and Author
@@ -42,7 +45,8 @@ binary star transits. This paper focuses on photometric observations of the U Ce
 (U Cephei) binary star system conducted by the author using personal equipment from a 
 Bortle 7 location. The study aims to examine the precision and reliability of these amateur 
 observations in comparison to professional datasets, exploring the potential for collaboration
-and the challenges inherent in combining data from diverse sources.
+and the challenges inherent in combining data from diverse sources. The final goal of the study if it is 
+successful enough is to submit the collected data to the AAVSO (American Association of Variable Star Observers).
 
 % Problematic
 \subsection{Problematic}
@@ -50,7 +54,7 @@ and the challenges inherent in combining data from diverse sources.
 \medskip
 
 % bold 
-\textbf{How do amateur photometric observations of binary star transits compare in precision and reliability to data collected by professional astronomers, and is data collected by amateurs precise enough to contribute to science?}
+\textbf{How do amateur photometric observations of binary star transits compare in precision and reliability to data collected by professional astronomers, and is this collected data precise enough to contribute to science?}
 
 \section{What are transits?}
 
@@ -133,18 +137,50 @@ I employed the following equipment for the photometric observations of U Cephei:
 % Results
 \section{Results}
 
-\subsection{Light curve}
+\subsection{Cleaning the data}
 
-The first thing to do after collecting the data is to plot it and see if we can see any transit event. 
+The first step in analyzing the data is to clean it, this means removing any outliers or bad data points that could affect the results but also in our case making sure our star is aligned on each frame to make the process easier.
 
-\begin{figure}[h]
+\bigskip
+
+% TODO : Add a before and after image of the data cleaning process
+
+Using \href{https://siril.org/fr/}{Siril} which is a free and opensource software for astrophotography, it is very easy to align all the images of the observation to make sure the star is always at the same place in the frame.
+As a comparaison here is the same data after the cleaning process:
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{imgs/light-curve.png}
-    \caption{Light curve of U Cephei showing a clear transit event.}
-    \label{fig:light_curve}
+    \includegraphics[width=0.8\textwidth]{imgs/aligned.png}
+    \caption{Cleaned data of U Cephei.}
+    \label{fig:cleaned_data}
 \end{figure}
 
-On the x axis we have the time of the observation in Julian Date (JD), and on the y axis we have the relative flux of the stars.
+Here is an example aligned image after the Siril process, we can see that the software shifted
+the frame to align the star in the sme way on all the images. During the process,
+each image had to be debayered before being aligned, this process is called preprocessing.
+
+\bigskip
+
+Basically when taking pictures with a CCD camera, the sensor is covered with a Bayer filter which is a color filter array, this means that each pixel of the sensor is covered with a red, green or blue filter.
+The process of debayering is to reconstruct the image by interpolating the missing colors of each pixel, this is done to get a full color image.
+
+\medskip
+
+After cleaning the data I wanted to see if it was possible to detect the transit event just by creating a video of the frames.
+Since this eclipse variation of magnitude is so important I felt like it could be visible enough.
+
+\bigskip
+
+Using a python script I converted each of the fit file into a grayscale png and then was able to use the ffmpeg library to create a video of the frames.
+The result is available \href{https://youtube.com/shorts/rVnEccCb3Aw}{here}.
+
+In it we can cleary see the star getting dimmer until the frame 150 and then brighter again, this is the transit event happening.
+
+
+\subsection{Light curve}
+
+After our data has been collected and prepared we can plot a light curve which is a graph showing the variation of the flux of the star over time.
+On the x axis we will have the time of the observation in Julian Date (JD), and on the y axis we have the relative flux of the stars.
 
 To understand a bit more those scales I think it is important to take the time to explain each of them.
 \begin{itemize}
@@ -158,6 +194,23 @@ To understand a bit more those scales I think it is important to take the time t
     \item Julian Date: The Julian Date is a continuous count of days since the beginning of the Julian Period on January 1, 4713 BC. 
     It is widely used in astronomy because it is a continuous count of days, allowing for easy comparison of dates and times.
 \end{itemize}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imgs/light-curve.png}
+    \caption{Light curve of U Cephei showing a clear transit event.}
+    \label{fig:light_curve}
+\end{figure}
+
+The light curve of U Cephei is showing a clear transit event happening, we can see the flux of the star decreasing and then increasing again, as comparaison to the flux of the comparison star.
+
+Only 2 comparision stars are showcased on this graph, but in reality 7 comparision stars were used to get a more accurate result. When looking at their light curve we clearly see that they remain pretty stable throughout the observation,
+and normalized around 1, which is a good sign that the data is reliable.
+
+This is a great result, it means that the observation was successful and that we managed to catch a transit event, now it is time to compare it to data that was collected by professional observatories.
+
+\subsection{Comparative Analysis}
 
 
 \subsection{Conclusion}
