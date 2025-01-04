@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  1 JAN 2025 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  4 JAN 2025 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -249,7 +249,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box55
-) (./paper.aux)
+) (./paper.aux
+
+LaTeX Warning: Label `fig:light_curve' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -335,48 +339,63 @@ Package hyperref Info: Link coloring OFF on input line 19.
 \openout4 = `paper.toc'.
 
  [2] [3] [4]
-<imgs/aligned.png, id=133, 1093.08376pt x 613.29124pt>
-File: imgs/aligned.png Graphic file (type png)
-<use imgs/aligned.png>
-Package pdftex.def Info: imgs/aligned.png  used on input line 153.
+<assets/aligned.png, id=128, 1093.08376pt x 613.29124pt>
+File: assets/aligned.png Graphic file (type png)
+<use assets/aligned.png>
+Package pdftex.def Info: assets/aligned.png  used on input line 153.
 (pdftex.def)             Requested size: 362.37569pt x 203.31317pt.
  [5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.191     \end{equation}
-                         <./imgs/aligned.png>]
-<imgs/light-curve.png, id=149, 879.285pt x 754.82pt>
-File: imgs/light-curve.png Graphic file (type png)
-<use imgs/light-curve.png>
-Package pdftex.def Info: imgs/light-curve.png  used on input line 201.
-(pdftex.def)             Requested size: 362.37569pt x 311.07916pt.
+                         <./assets/aligned.png>]
+<assets/Measurements.png, id=143, 1055.945pt x 754.82pt>
+File: assets/Measurements.png Graphic file (type png)
+<use assets/Measurements.png>
+Package pdftex.def Info: assets/Measurements.png  used on input line 201.
+(pdftex.def)             Requested size: 452.9679pt x 323.7946pt.
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.220     \item L
-                 ight pollution and equipment limitations introduced variabi... <./imgs/light-curve.png>] [8] (./paper.aux)
+l.214 W
+       e also can notive a small gap in the data around the meridian flip si... <./assets/Measurements.png (PNG copy)>]
+<assets/comparaison.png, id=152, 867.24pt x 578.16pt>
+File: assets/comparaison.png Graphic file (type png)
+<use assets/comparaison.png>
+Package pdftex.def Info: assets/comparaison.png  used on input line 227.
+(pdftex.def)             Requested size: 452.9679pt x 301.97705pt.
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.242     \item L
+                 ight pollution and equipment limitations introduced variabi... <./assets/comparaison.png>] [9] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: CF88FA73731BA2335EA757DD04CBA923;2245.
+(rerunfilecheck)             Checksum: CB9DAAB9531E446BE8181F8AC4F6DAB5;2151.
  ) 
 Here is how much of TeX's memory you used:
- 9795 strings out of 474122
- 150670 string characters out of 5743967
- 1935187 words of memory out of 5000000
- 32000 multiletter control sequences out of 15000+600000
+ 9802 strings out of 474122
+ 150901 string characters out of 5743967
+ 1934187 words of memory out of 5000000
+ 32006 multiletter control sequences out of 15000+600000
  566275 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,647b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (8 pages, 1291499 bytes).
+Output written on paper.pdf (9 pages, 1356651 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -150,7 +150,7 @@ As a comparaison here is the same data after the cleaning process:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{imgs/aligned.png}
+    \includegraphics[width=0.8\textwidth]{assets/aligned.png}
     \caption{Cleaned data of U Cephei.}
     \label{fig:cleaned_data}
 \end{figure}
@@ -198,19 +198,41 @@ To understand a bit more those scales I think it is important to take the time t
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{imgs/light-curve.png}
+    \includegraphics[width=1\textwidth]{assets/Measurements.png}
     \caption{Light curve of U Cephei showing a clear transit event.}
     \label{fig:light_curve}
 \end{figure}
 
 The light curve of U Cephei is showing a clear transit event happening, we can see the flux of the star decreasing and then increasing again, as comparaison to the flux of the comparison star.
+I didn't completely trim the data after the transit to showcase the return to normal of the star, we see that from 0.62 to the end the curve seems to stabilize again and become linear.
 
-Only 2 comparision stars are showcased on this graph, but in reality 7 comparision stars were used to get a more accurate result. When looking at their light curve we clearly see that they remain pretty stable throughout the observation,
-and normalized around 1, which is a good sign that the data is reliable.
+Only 2 comparision stars are showcased on this graph, but in reality 7 comparision stars were picked to get a more accurate result. When looking at those 2 light curve we clearly see that they remain pretty linear throught the night,
+and normalized around 1, which is a good sign that the data is reliable. The pertubations on the light curves can be explained by the fact that the stars are not at the same altitude in the sky, and that the atmosphere can affect the light received by the camera, as well as the fact
+this data is collected by an amateur setup.
+
+
+We also can notive a small gap in the data around the meridian flip since this is not fully automated yet, the telescope had to be flipped manually, which caused a small gap in the data.
+
+\bigskip
 
 This is a great result, it means that the observation was successful and that we managed to catch a transit event, now it is time to compare it to data that was collected by professional observatories.
 
 \subsection{Comparative Analysis}
+
+To validate the reliability of the amateur observations, I conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission. The TESS data provided a benchmark for evaluating the precision and accuracy of the amateur observations.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/comparaison.png}
+    \caption{Light curve comparaison from TESS data and amateur data.}
+    \label{fig:light_curve}
+\end{figure}
+
+One thing we see when looking at those light curves is the fact they are not overlapping. This can be explained by the fact that TESS is in space and doesn't have to deal with the atmosphere, making the star looks brighter. It could also be explained by the fact
+TESS sensor is more sensitive than the one used in this study, making the star looks brighter. This is why the data is not overlapping, but the transit event is still clearly visible on both light curves.
+
+
 
 
 \subsection{Conclusion}
@@ -221,10 +243,6 @@ This is a great result, it means that the observation was successful and that we
     \item Cross-validation with professional data confirmed the overall reliability of the amateur observations, with minor deviations attributed to observational conditions.
 \end{itemize}
 Figures and tables summarizing the comparative results are presented below.
-
-% Discussion
-\section{Discussion}
-% The findings underscore the feasibility of conducting meaningful photometric observations of binary star systems, such as U Cephei, under suboptimal conditions using personal equipment. While light pollution (Bortle 7) posed challenges, careful calibration and consistent methodology mitigated many of the issues. The results demonstrate the potential for amateur observations to complement professional studies, particularly for systems with frequent or well-documented transits.
 
 % This study highlights the potential of amateur astronomers to contribute to the broader astronomical community. By focusing on specific systems like U Cephei, amateurs can provide valuable data to supplement professional observations. Future efforts should aim to enhance equipment calibration techniques and explore automated tools for improving data reliability.
 

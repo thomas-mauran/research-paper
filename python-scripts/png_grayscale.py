@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 # Directories
-input_dir = "./img/"
+input_dir = "./data/"
 png_dir = "./png"
 os.makedirs(png_dir, exist_ok=True)
 

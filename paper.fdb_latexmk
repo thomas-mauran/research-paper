@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1735750935.98441 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1735750938.86499 0
-  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1735750935.63755 14438 4a78d95094cd0baf164bef2c64f42564 ""
+["pdflatex"] 1736016277.97059 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1736016280.8356 0
+  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1736016277.76438 15525 664188d7c497b932815396386487af27 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -91,12 +91,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709378109.37527 5472569 99e72973af7bd41132687409b8c9c95e ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709378136 8221322 6446dbbe3635e237a73a872cdd0c5883 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "imgs/aligned.png" 1735671202.2003 1624574 59a59babe6a3a62fd2339d5228af7126 ""
-  "imgs/light-curve.png" 1735666794.4275 51974 c2d15137f18f4c84173be0452ae9e95c ""
-  "paper.aux" 1735750938.80031 2845 2a3927e931e07665b143bcb9823c1c32 "pdflatex"
-  "paper.out" 1735750938.80109 2245 cf88fa73731ba2335ea757dd04cba923 "pdflatex"
-  "paper.tex" 1735750935.63755 14438 4a78d95094cd0baf164bef2c64f42564 ""
-  "paper.toc" 1735750938.80129 1402 17ec911f92cfc920ff447c8acf3cbcb0 "pdflatex"
+  "assets/Measurements.png" 1736009110.93782 50468 6e7ed5aaead5695d185c77124f8e1ed9 ""
+  "assets/aligned.png" 1735671202.2003 1624574 59a59babe6a3a62fd2339d5228af7126 ""
+  "assets/comparaison.png" 1736012672.43132 65558 70d7684f6b5209a75a6510d2f38c3736 ""
+  "paper.aux" 1736016280.77113 3009 90120038b283828ac61ef8e842ed9c57 "pdflatex"
+  "paper.out" 1736016280.77191 2151 cb9daab9531e446be8181f8ac4f6dab5 "pdflatex"
+  "paper.tex" 1736016277.76438 15525 664188d7c497b932815396386487af27 ""
+  "paper.toc" 1736016280.77213 1336 3326908bf7c67afd446920e4f297ebf1 "pdflatex"
   (generated)
   "paper.aux"
   "paper.log"
