@@ -48,15 +48,15 @@ observations in comparison to professional datasets, exploring the potential for
 and the challenges inherent in combining data from diverse sources. The final goal of the study if it is 
 successful enough is to submit the collected data to the AAVSO (American Association of Variable Star Observers).
 
-% Problematic
-\subsection{Problematic}
-
-\medskip
-
-% bold 
-\textbf{How do amateur photometric observations of binary star transits compare in precision and reliability to data collected by professional astronomers, and is this collected data precise enough to contribute to science?}
-
 \section{What are transits?}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/star-transits.jpg}
+    \caption{Transit of binary star system schema and associated light curves.}
+    \label{fig:transits}
+\end{figure}
+
 
 Transits are a phenomenon that occurs when a celestial body passes in front of another, partially or totally blocking its light.
 Those events are very interesting for astronomers as they can provide a lot of information about the objects involved, such as their size, mass, and even atmosphere.
@@ -100,7 +100,7 @@ We can right the magnitude variation as a ratio of brightness variation:
     2.512^{9.2-6.7} \approx 10
 \end{equation}
 
-In other words, during the transit, U Cephei will be 10 times less bright than when it's not in transit. This is a huge variation and makes it easier to detect the transit.
+In other words, during the transit, U Cephei will be 10 times dimmer than when it's not in transit. This is a huge variation and makes it easier to detect the transit.
 
 \subsubsection{Data availability}
 
@@ -109,17 +109,9 @@ Finally, U Cephei is a well-known system, with a lot of data available from prof
 % Methodology
 \section{Methodology}
 To address the research question, this study employs a comparative analysis of photometric data. Observations of the U Cephei binary star system were conducted using personal equipment under urban light pollution conditions (Bortle 7). The following steps were undertaken:
-\begin{enumerate}
-    \item Setup of observation equipment, including a CCD camera and a telescope with an aperture suitable for photometric studies.
-    \item Observation of the U Cephei binary system taking 15 second exposure every 2 minutes.
-    \item Acquisition of professional data on U Cephei from observatory archives and published studies for comparison.
-    \item Standardization of data formats for comparative analysis.
-    \item Statistical evaluation of precision, including signal-to-noise ratios and error margins.
-    \item Reliability assessment through consistency checks and cross-validation with established models.
-\end{enumerate}
 
-% Equipment
-\subsection{Equipment used}
+\subsection{Observation Setup}
+
 Specifying the equipment used in the study is essential to understanding the context and limitations of the observations. 
 I employed the following equipment for the photometric observations of U Cephei:
 
@@ -130,14 +122,14 @@ I employed the following equipment for the photometric observations of U Cephei:
     \item Filters: UV and IR cut filter for reducing light pollution and enhancing contrast.
     \item Mount: Celestron Celestrong cg-5 goto equatorial mount for trackin.
     \item Autoguider: ZWO ASI 120MM mini monochrome camera and 50mm guide scope for guiding.
-    \item Software: N.I.N.A for image acquisition and PHD2 guiding software for tracking. AstroImageJ for data analysis.
+    \item Software: N.I.N.A for image acquisition and PHD2 guiding software for tracking. AstroImageJ for data analysis and Siril for aligning the images.
     \item Light Pollution: Montpellier, Bortle 7 (suburban/urban transition) location with moderate light pollution.
 \end{itemize}
 
-% Results
-\section{Results}
+\subsection{Observation Procedure}
 
-\subsection{Cleaning the data}
+\subsection{Cleaning the amateur data}
+
 
 The first step in analyzing the data is to clean it, this means removing any outliers or bad data points that could affect the results but also in our case making sure our star is aligned on each frame to make the process easier.
 
@@ -150,13 +142,13 @@ As a comparaison here is the same data after the cleaning process:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/aligned.png}
-    \caption{Cleaned data of U Cephei.}
+    \includegraphics[width=1\textwidth]{assets/aligned.png}
+    \caption{Cleaned data of U Cephei and it's comparison stars used for the study.}
     \label{fig:cleaned_data}
 \end{figure}
 
 Here is an example aligned image after the Siril process, we can see that the software shifted
-the frame to align the star in the sme way on all the images. During the process,
+the frame to align the star in the same way on all the images. During the process,
 each image had to be debayered before being aligned, this process is called preprocessing.
 
 \bigskip
@@ -176,6 +168,12 @@ The result is available \href{https://youtube.com/shorts/rVnEccCb3Aw}{here}.
 
 In it we can cleary see the star getting dimmer until the frame 150 and then brighter again, this is the transit event happening.
 
+\subsection{Professional Data Acquisition}
+
+\subsection{Standardization of Data Formats, light curves and comparative analysis}
+
+% Results
+\section{Results}
 
 \subsection{Light curve}
 
@@ -233,10 +231,6 @@ One thing we see when looking at those light curves is the fact they are not ove
 TESS sensor is more sensitive than the one used in this study, making the star looks brighter. This is why the data is not overlapping, but the transit event is still clearly visible on both light curves.
 
 
-
-
-\subsection{Conclusion}
-
 \begin{itemize}
     \item Amateur data demonstrated significant precision in detecting transit features, with signal-to-noise ratios that were competitive with professional datasets under optimal conditions.
     \item Light pollution and equipment limitations introduced variability, leading to slightly higher error margins compared to professional datasets.
@@ -245,6 +239,8 @@ TESS sensor is more sensitive than the one used in this study, making the star l
 Figures and tables summarizing the comparative results are presented below.
 
 % This study highlights the potential of amateur astronomers to contribute to the broader astronomical community. By focusing on specific systems like U Cephei, amateurs can provide valuable data to supplement professional observations. Future efforts should aim to enhance equipment calibration techniques and explore automated tools for improving data reliability.
+
+\section{Discussion}
 
 % Conclusion
 \section{Conclusion}

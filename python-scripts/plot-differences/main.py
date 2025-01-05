@@ -7,7 +7,8 @@ ucep = pd.read_csv('./Measurements.csv', delimiter=';')
 ucep = ucep[0:263]
 
 tess = pd.read_csv('./tess.csv')
-tess_trimmed = tess[38:102]
+# tess_trimmed = tess[38:102]
+tess_trimmed = tess[3118:3192]
 
 
 # Inspect the data
@@ -17,7 +18,8 @@ print(ucep.columns)
 # Extract relevant columns
 ucep_time = ucep['JD_UTC']
 for i in range(len(ucep_time)):
-    ucep_time[i] = ucep_time[i] - 2460669 # We need to subtract the first value from all the values to get the correct time
+    ucep_time[i] = ucep_time[i] - 2460669
+
 ucep_mag = ucep['Source_AMag_T1']
 
 for i in range(len(ucep_mag)):
@@ -26,7 +28,7 @@ for i in range(len(ucep_mag)):
 tess_time = tess['time']
 
 for i in range(len(tess_time)):
-    tess_time[i] = tess_time[i] - 2744
+    tess_time[i] = tess_time[i] - 2766.46
 
 tess_mag = tess['mag']
 
