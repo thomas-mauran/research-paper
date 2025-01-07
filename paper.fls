@@ -166,6 +166,11 @@ INPUT ./assets/aligned.png
 INPUT ./assets/aligned.png
 INPUT ./assets/aligned.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./assets/ucep-stars-mag.png
+INPUT ./assets/ucep-stars-mag.png
+INPUT ./assets/ucep-stars-mag.png
+INPUT ./assets/ucep-stars-mag.png
+INPUT ./assets/ucep-stars-mag.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT ./assets/Measurements.png
 INPUT ./assets/Measurements.png

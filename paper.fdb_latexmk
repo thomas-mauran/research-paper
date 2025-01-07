@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1736072966.7594 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1736072968.40386 0
-  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1736072965.05724 15040 03b55aaab7a5da30d3019011e9777c96 ""
+["pdflatex"] 1736195910.64075 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1736195912.31627 0
+  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1736195908.63676 15648 eb631976a5b189d030f9677ce7a7e3a8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -91,14 +91,15 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709378109.37527 5472569 99e72973af7bd41132687409b8c9c95e ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709378136 8221322 6446dbbe3635e237a73a872cdd0c5883 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "assets/Measurements.png" 1736009110.93782 50468 6e7ed5aaead5695d185c77124f8e1ed9 ""
-  "assets/aligned.png" 1736067845.63361 1190656 581ba08e8ea82c41de2b702e00fc9ffc ""
+  "assets/Measurements.png" 1736194689.27451 49367 269ffdff124a68b83d00898dbce426bd ""
+  "assets/aligned.png" 1736194919.52936 1179500 3d813b145c22844d1b0862d72e4763ca ""
   "assets/comparaison.png" 1736012672.43132 65558 70d7684f6b5209a75a6510d2f38c3736 ""
   "assets/star-transits.jpg" 1736067672.7883 12682 997e0023c5fed363c55fab19c15a47e7 ""
-  "paper.aux" 1736072968.33252 3709 933bfce08219ec88a037a5651dd90713 "pdflatex"
-  "paper.out" 1736072968.33378 2889 de2fcbb98de116fd18711d9824cb1b03 "pdflatex"
-  "paper.tex" 1736072965.05724 15040 03b55aaab7a5da30d3019011e9777c96 ""
-  "paper.toc" 1736072968.33412 1578 281dc73ede516a3489e844795d61c9a7 "pdflatex"
+  "assets/ucep-stars-mag.png" 1736192328.13327 138106 53e01f74f8c648c38ee1188110b8c505 ""
+  "paper.aux" 1736195912.25374 4007 ed02946361bafa949b6dec79c1c464ed "pdflatex"
+  "paper.out" 1736195912.25467 2889 de2fcbb98de116fd18711d9824cb1b03 "pdflatex"
+  "paper.tex" 1736195908.63676 15648 eb631976a5b189d030f9677ce7a7e3a8 ""
+  "paper.toc" 1736195912.25493 1581 a8a6234c51d54f0c0e61cddef5fc12cb "pdflatex"
   (generated)
   "paper.aux"
   "paper.log"

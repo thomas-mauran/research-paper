@@ -3,59 +3,43 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the data
-ucep = pd.read_csv('./Measurements.csv', delimiter=';')
+ucep = pd.read_csv('./Measurements-good-time.csv', delimiter=';')
 ucep = ucep[0:263]
 
-tess = pd.read_csv('./tess.csv')
-# tess_trimmed = tess[38:102]
-tess_trimmed = tess[3118:3192]
+tess = pd.read_csv('./tess-2024-good.csv')
 
-
-# Inspect the data
-print(ucep.head())
-print(ucep.columns)
-
-# Extract relevant columns
-ucep_time = ucep['JD_UTC']
-for i in range(len(ucep_time)):
-    ucep_time[i] = ucep_time[i] - 2460669
-
+# Extract relevant columns and adjust time/magnitude
+ucep_time = ucep['UNIX_Timestamp']
 ucep_mag = ucep['Source_AMag_T1']
 
-for i in range(len(ucep_mag)):
-    ucep_mag[i] = ucep_mag[i] - 0.5
-
-tess_time = tess['time']
-
-for i in range(len(tess_time)):
-    tess_time[i] = tess_time[i] - 2766.46
-
+tess_time = tess['Unix_Timestamp']
 tess_mag = tess['mag']
 
-# Trim TESS data to match U Cephei's timeframe
-ucep_start = ucep_time.min()
-ucep_end = ucep_time.max()
+# Check the time ranges for overlap
+print(f"U Cephei time range: {ucep_time.min()} to {ucep_time.max()}")
+print(f"TESS time range: {tess_time.min()} to {tess_time.max()}")
 
-# Update TESS variables after trimming
-tess_time = tess_trimmed['time']
-tess_mag = tess_trimmed['mag']
+# Normalize both U Cephei and TESS times
+ucep_normalized_time = ucep_time - ucep_time.min()
+tess_normalized_time = tess_time - tess_time.min()
 
-# Convert U Cephei flux to magnitude
-# ucep_mag = -2.5 * np.log10(ucep_flux) + 7
 
-# Interpolate U Cephei data to match TESS times
-ucep_interp_mag = np.interp(tess_time, ucep_time, ucep_mag)
+# Interpolate U Cephei magnitudes to match TESS times
+ucep_interp_mag = np.interp(tess_normalized_time, ucep_normalized_time, ucep_mag)
 
-# Calculate the difference in magnitude
-mag_diff = ucep_interp_mag - tess_mag
+plt.plot(tess_normalized_time, tess_mag, label='TESS Data', color='blue', linestyle='-', marker='o', markersize=4)
+plt.plot(tess_normalized_time, ucep_interp_mag, label='Personal Data from Montpellier', color='orange', linestyle='--', marker='x', markersize=4)
 
-# Plot the light curves and their difference
-plt.figure(figsize=(12, 8))
+# Customize plot
+plt.gca().invert_yaxis()  # Magnitudes are inverted (brighter is lower)
+plt.xlabel('Time')
+plt.ylabel('Magnitude')
+plt.title('U Cephei Light Curve Comparison from TESS and Personal Data')
+plt.legend()
 
-# Split light curves in 2 graphs 
 # Plot TESS light curve
 # plt.subplot(3, 1, 1)
-# plt.plot(tess_time, tess_mag, label='TESS Magnitude', color='blue')
+# plt.plot(tess_normalized_time, tess_mag, label='TESS Magnitude', color='blue', marker='o', markersize=4)
 # plt.gca().invert_yaxis()  # Magnitudes are inverted (brighter is lower)
 # plt.ylabel('Magnitude')
 # plt.title('TESS Light Curve')
@@ -63,21 +47,14 @@ plt.figure(figsize=(12, 8))
 
 # # Plot U Cephei light curve
 # plt.subplot(3, 1, 2)
-# plt.plot(ucep_time, ucep_mag, label='U Cephei Magnitude', color='orange')
+# plt.plot(tess_normalized_time, ucep_interp_mag, label='Interpolated U Cephei Magnitude', color='orange', marker='x', markersize=4)
 # plt.gca().invert_yaxis()
 # plt.ylabel('Magnitude')
-# plt.title('U Cephei Light Curve')
+# plt.title('Interpolated U Cephei Light Curve')
 # plt.legend()
 
-plt.plot(tess_time, tess_mag, label='TESS Data', color='blue', linestyle='-', marker='o', markersize=4)
-plt.plot(tess_time, ucep_interp_mag, label='Personnal data from Montpellier', color='orange', linestyle='--', marker='x', markersize=4)
 
-# Customize plot
-plt.gca().invert_yaxis()  # Magnitudes are inverted (brighter is lower)
-plt.xlabel('Time')
-plt.ylabel('Magnitude')
-plt.title('U Cephei light curve comparaison from TESS and personal data')
-plt.legend()
 
 plt.tight_layout()
 plt.show()
+

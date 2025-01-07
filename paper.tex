@@ -118,7 +118,7 @@ I employed the following equipment for the photometric observations of U Cephei:
 \begin{itemize}
     \item Telescope: Sky-Watcher Quattro 150P Newtonian reflector telescope with a 150mm aperture and 600mm focal length.
     \item Reducer: Sky-Watcher 0.85x Coma Corrector lowering the focal length to 510mm.
-    \item Camera: ZWO ASI 585MC pro monochrome CCD camera with a 8.29 MP sensor.
+    \item Camera: ZWO ASI 585MC pro monochrome CMOS camera with a 8.29 MP sensor.
     \item Filters: UV and IR cut filter for reducing light pollution and enhancing contrast.
     \item Mount: Celestron Celestrong cg-5 goto equatorial mount for trackin.
     \item Autoguider: ZWO ASI 120MM mini monochrome camera and 50mm guide scope for guiding.
@@ -147,14 +147,30 @@ As a comparaison here is the same data after the cleaning process:
     \label{fig:cleaned_data}
 \end{figure}
 
-Here is an example aligned image after the Siril process, we can see that the software shifted
-the frame to align the star in the same way on all the images. During the process,
-each image had to be debayered before being aligned, this process is called preprocessing.
+This screenshot has been taken in AstroImageJ, which is a software used to analyze astronomical images and easily create light curves.
+Here we can see in green my star of interest U Cephei, and in red the comparison stars used to normalize the data.
+You can see that next to each star there is a number, this is the magnitude of the star, which is a measure of its brightness.
 
 \bigskip
 
-Basically when taking pictures with a CCD camera, the sensor is covered with a Bayer filter which is a color filter array, this means that each pixel of the sensor is covered with a red, green or blue filter.
-The process of debayering is to reconstruct the image by interpolating the missing colors of each pixel, this is done to get a full color image.
+I chose manually the stars and took them because they have a known magnitude, allowing the software to guess the magnitude of U Cephei.
+To know the magnitude of those reference stars I used the \href{https://apps.aavso.org/vsp/chart/?star=U+Cep&fov=120.0&maglimit=12.0}{AAVSO website} which is a great tool to get information about stars and their magnitude.
+
+By searching for U Cephei you basically get a chart of the star and the stars around it, with their magnitude, which is very useful to pick the right stars for the study.
+
+\bigskip
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/ucep-stars-mag.png}
+    \caption{AAVSO Star chart of U Cephei and neighbors star magnitudes.}
+    \label{fig:Ucep-stars-chart}
+\end{figure}
+
+\bigskip
+
+It's important to note something else in the \ref{fig:cleaned_data} image, we see that the frame has been shifted, this is what Siril did to make sure each frame is aligned.
 
 \medskip
 
@@ -194,7 +210,7 @@ To understand a bit more those scales I think it is important to take the time t
 \end{itemize}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{assets/Measurements.png}
     \caption{Light curve of U Cephei showing a clear transit event.}
@@ -217,14 +233,13 @@ This is a great result, it means that the observation was successful and that we
 
 \subsection{Comparative Analysis}
 
-To validate the reliability of the amateur observations, I conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission. The TESS data provided a benchmark for evaluating the precision and accuracy of the amateur observations.
+To validate the reliability of the amateur observations, I conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission.
 
-
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{assets/comparaison.png}
     \caption{Light curve comparaison from TESS data and amateur data.}
-    \label{fig:light_curve}
+    \label{fig:tess-data-comparaison}
 \end{figure}
 
 One thing we see when looking at those light curves is the fact they are not overlapping. This can be explained by the fact that TESS is in space and doesn't have to deal with the atmosphere, making the star looks brighter. It could also be explained by the fact
