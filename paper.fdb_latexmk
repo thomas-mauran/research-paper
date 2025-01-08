@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1736195910.64075 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1736195912.31627 0
-  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1736195908.63676 15648 eb631976a5b189d030f9677ce7a7e3a8 ""
+["pdflatex"] 1736367902.48999 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1736367904.19596 0
+  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1736367902.24739 16031 c73a02f645518afcf2676da5e11b03c4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -93,13 +93,14 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "assets/Measurements.png" 1736194689.27451 49367 269ffdff124a68b83d00898dbce426bd ""
   "assets/aligned.png" 1736194919.52936 1179500 3d813b145c22844d1b0862d72e4763ca ""
-  "assets/comparaison.png" 1736012672.43132 65558 70d7684f6b5209a75a6510d2f38c3736 ""
-  "assets/star-transits.jpg" 1736067672.7883 12682 997e0023c5fed363c55fab19c15a47e7 ""
+  "assets/comparison.png" 1736366216.73385 73166 f66bcfaa873f95c4eb9a091486355695 ""
+  "assets/shifted-comparison.png" 1736365978.30386 79972 2e88b3139fc1471135400f4d0ce35cd4 ""
+  "assets/star-transits.jpg" 1736366099.92996 34837 a7d528c5c93649cbe07a934074ca95c9 ""
   "assets/ucep-stars-mag.png" 1736192328.13327 138106 53e01f74f8c648c38ee1188110b8c505 ""
-  "paper.aux" 1736195912.25374 4007 ed02946361bafa949b6dec79c1c464ed "pdflatex"
-  "paper.out" 1736195912.25467 2889 de2fcbb98de116fd18711d9824cb1b03 "pdflatex"
-  "paper.tex" 1736195908.63676 15648 eb631976a5b189d030f9677ce7a7e3a8 ""
-  "paper.toc" 1736195912.25493 1581 a8a6234c51d54f0c0e61cddef5fc12cb "pdflatex"
+  "paper.aux" 1736367904.13649 4659 3d85b7940c30b0bfc6fc089a3b45930d "pdflatex"
+  "paper.out" 1736367904.13744 3192 37561aa69f15f8bd2faf5ede2e461298 "pdflatex"
+  "paper.tex" 1736367902.24739 16031 c73a02f645518afcf2676da5e11b03c4 ""
+  "paper.toc" 1736367904.13765 1805 d5ffdda7ba62e52b00af1fd22fdcbb54 "pdflatex"
   (generated)
   "paper.aux"
   "paper.log"

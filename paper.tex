@@ -88,7 +88,7 @@ Secondly, this system eclipse is short, lasting only a couple of hours it's poss
 Stars magnitude define how bright they are. This scale of magnitude is logarithmic, meaning that a difference of 1 magnitude is a difference of 2.512 times in brightness and a difference of 2 magnitudes is a difference of \(\mathbf{2.512^2}\) times in brightness.
 the scale is inverted, meaning that the lower the magnitude, the brighter the star is.
 
-The magnitude of U Cephei varies from 6.7 to 9.2. Which is actually a huge variation in brightness. If we wanna have a comparaison in percentage we can do the following calculation:
+The magnitude of U Cephei varies from 6.7 to 9.2. Which is actually a huge variation in brightness. If we wanna have a comparison in percentage we can do the following calculation:
 
 We can right the magnitude variation as a ratio of brightness variation:
 
@@ -138,7 +138,7 @@ The first step in analyzing the data is to clean it, this means removing any out
 % TODO : Add a before and after image of the data cleaning process
 
 Using \href{https://siril.org/fr/}{Siril} which is a free and opensource software for astrophotography, it is very easy to align all the images of the observation to make sure the star is always at the same place in the frame.
-As a comparaison here is the same data after the cleaning process:
+As a comparison here is the same data after the cleaning process:
 
 \begin{figure}[H]
     \centering
@@ -193,6 +193,52 @@ In it we can cleary see the star getting dimmer until the frame 150 and then bri
 
 \subsection{Light curve}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/Measurements.png}
+    \caption{Light curve of U Cephei showing a clear transit event.}
+    \label{fig:light_curve}
+\end{figure}
+
+In this graph, we see multiple lines: the blue one represents the normalized relative flux of U Cephei, while the red and green ones show the normalized relative flux of the comparison stars. The flux of the comparison stars remains fairly linear around 1, 
+whereas the flux of U Cephei follows a parabolic curve, starting from 1.5, decreasing to 0.6, and then returning to 1.5 over 9.6 hours. This duration is calculated as \( 0.7 - 0.3 = 0.4 \, \text{days} \), and \( 0.4 \, \text{days} \times 24 = 9.6 \, \text{hours} \).
+
+\medskip
+
+We also can notive a small gap in the data around the meridian flip since this is not fully automated yet, the telescope had to be flipped manually, which caused a small gap in the data.
+
+\bigskip
+
+
+\subsection{Comparative Analysis}
+
+To validate the reliability of the amateur observations, I conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/comparison.png}
+    \caption{Light curve comparison from TESS data and amateur data.}
+    \label{fig:tess-data-comparison}
+\end{figure}
+
+This graphs shows the light curve of U Cephei from the TESS data in blue and the amateur data I collected in orange. 
+Both curves display a parabolic similar shape. The TESS data light curve actually being a bit brighter, starting around 6.85 and lowering to almost 8.25 than the amateur one, starting at 7.75 and lowering to 8.75.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{assets/shifted-comparison.png}
+    \caption{Light curve comparison where the amateur data was shifted by -0.5.}
+  \label{fig:tess-data-comparison-shifted}
+\end{figure}
+
+This is another light curve comparison very similar to the previous one, but this time the amateur data has been shifted by -0.5. 
+
+% This study highlights the potential of amateur astronomers to contribute to the broader astronomical community. By focusing on specific systems like U Cephei, amateurs can provide valuable data to supplement professional observations. Future efforts should aim to enhance equipment calibration techniques and explore automated tools for improving data reliability.
+
+\section{Discussion}
+
+\subsection{Figure 1}
+
 After our data has been collected and prepared we can plot a light curve which is a graph showing the variation of the flux of the star over time.
 On the x axis we will have the time of the observation in Julian Date (JD), and on the y axis we have the relative flux of the stars.
 
@@ -210,52 +256,21 @@ To understand a bit more those scales I think it is important to take the time t
 \end{itemize}
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{assets/Measurements.png}
-    \caption{Light curve of U Cephei showing a clear transit event.}
-    \label{fig:light_curve}
-\end{figure}
+The light curve of U Cephei is showing a clear transit event happening.
 
-The light curve of U Cephei is showing a clear transit event happening, we can see the flux of the star decreasing and then increasing again, as comparaison to the flux of the comparison star.
-I didn't completely trim the data after the transit to showcase the return to normal of the star, we see that from 0.62 to the end the curve seems to stabilize again and become linear.
+This is a great result, it means that the observation was successful and that we managed to catch a transit event, now it is time to compare it to data that was collected by professional observatories.
+\medskip
 
 Only 2 comparision stars are showcased on this graph, but in reality 7 comparision stars were picked to get a more accurate result. When looking at those 2 light curve we clearly see that they remain pretty linear throught the night,
 and normalized around 1, which is a good sign that the data is reliable. The pertubations on the light curves can be explained by the fact that the stars are not at the same altitude in the sky, and that the atmosphere can affect the light received by the camera, as well as the fact
 this data is collected by an amateur setup.
 
-
-We also can notive a small gap in the data around the meridian flip since this is not fully automated yet, the telescope had to be flipped manually, which caused a small gap in the data.
-
-\bigskip
-
-This is a great result, it means that the observation was successful and that we managed to catch a transit event, now it is time to compare it to data that was collected by professional observatories.
-
-\subsection{Comparative Analysis}
-
-To validate the reliability of the amateur observations, I conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{assets/comparaison.png}
-    \caption{Light curve comparaison from TESS data and amateur data.}
-    \label{fig:tess-data-comparaison}
-\end{figure}
-
+\subsection{Figure 2}
 One thing we see when looking at those light curves is the fact they are not overlapping. This can be explained by the fact that TESS is in space and doesn't have to deal with the atmosphere, making the star looks brighter. It could also be explained by the fact
 TESS sensor is more sensitive than the one used in this study, making the star looks brighter. This is why the data is not overlapping, but the transit event is still clearly visible on both light curves.
 
+\subsection{Figure 3}
 
-\begin{itemize}
-    \item Amateur data demonstrated significant precision in detecting transit features, with signal-to-noise ratios that were competitive with professional datasets under optimal conditions.
-    \item Light pollution and equipment limitations introduced variability, leading to slightly higher error margins compared to professional datasets.
-    \item Cross-validation with professional data confirmed the overall reliability of the amateur observations, with minor deviations attributed to observational conditions.
-\end{itemize}
-Figures and tables summarizing the comparative results are presented below.
-
-% This study highlights the potential of amateur astronomers to contribute to the broader astronomical community. By focusing on specific systems like U Cephei, amateurs can provide valuable data to supplement professional observations. Future efforts should aim to enhance equipment calibration techniques and explore automated tools for improving data reliability.
-
-\section{Discussion}
 
 % Conclusion
 \section{Conclusion}

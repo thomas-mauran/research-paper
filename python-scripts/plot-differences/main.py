@@ -32,7 +32,7 @@ plt.plot(tess_normalized_time, ucep_interp_mag, label='Personal Data from Montpe
 
 # Customize plot
 plt.gca().invert_yaxis()  # Magnitudes are inverted (brighter is lower)
-plt.xlabel('Time')
+plt.xlabel('Unix Time (normalized to 0)')
 plt.ylabel('Magnitude')
 plt.title('U Cephei Light Curve Comparison from TESS and Personal Data')
 plt.legend()
