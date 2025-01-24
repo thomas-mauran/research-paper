@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  13 JAN 2025 09:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  24 JAN 2025 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -400,7 +400,32 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.261 T
-       his is a great result, it means that the observation was successful a... <./assets/shifted-comparison.png>] [11] [12] (./paper.aux)
+       his is a great result, it means that the observation was successful a... <./assets/shifted-comparison.png>] [11]
+Underfull \hbox (badness 6173) in paragraph at lines 323--327
+[]\OT1/cmr/m/n/12 Mobberley, M. (2010). \OT1/cmr/m/it/12 Am-a-teur As-tronomer's Hand-book\OT1/cmr/m/n/12 . Springer, Chap-
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 329--333
+\OT1/cmr/m/it/12 of Vari-able Stars\OT1/cmr/m/n/12 . Pro-ceed-ings of the In-ter-na-tional As-tro-nom-i-cal Union,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
+\OT1/cmr/m/n/12 125, 73. []$\OT1/cmtt/m/n/12 https : / / www . cambridge . org / core / services / aop-[]cambridge-[]core /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
+\OT1/cmtt/m/n/12 content / view / 6E3175E20C284177D4F534F506B1DD3E / S0252921100092794a . pdf /
+ []
+
+
+Overfull \hbox (8.73491pt too wide) in paragraph at lines 329--333
+\OT1/cmtt/m/n/12 the-[]contribution-[]of-[]amateur-[]astronomers-[]to-[]the-[]study-[]of-[]variable-[]stars .
+ []
+
+[12] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -409,18 +434,18 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 37561AA69F15F8BD2FAF5EDE2E461298;3192.
  ) 
 Here is how much of TeX's memory you used:
- 9835 strings out of 474122
- 151767 string characters out of 5743967
- 1934187 words of memory out of 5000000
- 32034 multiletter control sequences out of 15000+600000
- 566275 words of font info for 64 fonts, out of 8000000 for 9000
+ 9850 strings out of 474122
+ 152005 string characters out of 5743967
+ 1935187 words of memory out of 5000000
+ 32042 multiletter control sequences out of 15000+600000
+ 566444 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,647b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (12 pages, 980498 bytes).
+ 75i,7n,79p,532b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on paper.pdf (12 pages, 998253 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 310 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
