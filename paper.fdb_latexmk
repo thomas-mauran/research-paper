@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1737739166.18643 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1737739167.96617 0
-  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1737739164.20706 18484 3b7ca2b2452e368613080beccbd61e84 ""
+["pdflatex"] 1737739736.99849 "/Users/thomasmauran/Documents/research-paper/paper.tex" "paper.pdf" "paper" 1737739738.74024 0
+  "/Users/thomasmauran/Documents/research-paper/paper.tex" 1737739736.7621 18332 fb613f2a6d2d31ab6c3258f5205c36a7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -99,10 +99,10 @@
   "assets/shifted-comparison.png" 1736365978.30386 79972 2e88b3139fc1471135400f4d0ce35cd4 ""
   "assets/star-transits.jpg" 1736366099.92996 34837 a7d528c5c93649cbe07a934074ca95c9 ""
   "assets/ucep-stars-mag.png" 1736192328.13327 138106 53e01f74f8c648c38ee1188110b8c505 ""
-  "paper.aux" 1737739167.88104 4826 90db67859d4fd5d09b1ab51c79a3e60c "pdflatex"
-  "paper.out" 1737739167.88182 3192 37561aa69f15f8bd2faf5ede2e461298 "pdflatex"
-  "paper.tex" 1737739164.20706 18484 3b7ca2b2452e368613080beccbd61e84 ""
-  "paper.toc" 1737739167.88203 1805 d5ffdda7ba62e52b00af1fd22fdcbb54 "pdflatex"
+  "paper.aux" 1737739738.6745 4826 90db67859d4fd5d09b1ab51c79a3e60c "pdflatex"
+  "paper.out" 1737739738.67536 3192 37561aa69f15f8bd2faf5ede2e461298 "pdflatex"
+  "paper.tex" 1737739736.7621 18332 fb613f2a6d2d31ab6c3258f5205c36a7 ""
+  "paper.toc" 1737739738.67558 1805 d5ffdda7ba62e52b00af1fd22fdcbb54 "pdflatex"
   (generated)
   "paper.aux"
   "paper.log"
