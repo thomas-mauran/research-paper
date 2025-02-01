@@ -39,8 +39,8 @@ Amateur astronomers have increasingly contributed to astronomical research throu
 % Introduction
 \section{Introduction}
 In recent years, the field of astronomy has witnessed a growing collaboration between amateur 
-and professional astronomers. The advent of high-quality, low-cost equipment has enabled 
-amateur astronomers to perform sophisticated observations, including photometric studies of 
+and professional astronomers \cite{AmateurContribution}. The advent of high-quality, low-cost equipment has enabled 
+amateur astronomers to perform sophisticated observations \cite{AmateurObservation}, including photometric studies of 
 binary star transits. This paper focuses on photometric observations of the U Cephei 
 (U Cephei) binary star system conducted by the author using personal equipment from a 
 Bortle 7 location. The study aims to examine the precision and reliability of these amateur 
@@ -107,12 +107,12 @@ Finally, U Cephei is a well-known system, with a lot of data available from prof
 
 % Methodology
 \section{Methodology}
-To address the research question, this study employs a comparative analysis of photometric data. Observations of the U Cephei binary star system were conducted using personal equipment under urban light pollution conditions (Bortle 7). The following steps were undertaken:
+To address the research question, this study employs a comparative analysis of photometric data. Observations of the U Cephei binary star system were conducted using personal equipment under urban light pollution conditions (Bortle 7) \cite{LightPollution}. The following steps were undertaken:
 
 \subsection{Observation Setup}
 
 Specifying the equipment used in the study is essential to understanding the context and limitations of the observations. 
-I employed the following equipment for the photometric observations of U Cephei:
+We employed the following equipment for the photometric observations of U Cephei:
 
 \begin{itemize}
     \item Telescope: Sky-Watcher Quattro 150P Newtonian reflector telescope with a 150mm aperture and 600mm focal length.
@@ -121,7 +121,7 @@ I employed the following equipment for the photometric observations of U Cephei:
     \item Filters: UV and IR cut filter for reducing light pollution and enhancing contrast.
     \item Mount: Celestron Celestrong cg-5 goto equatorial mount for trackin.
     \item Autoguider: ZWO ASI 120MM mini monochrome camera and 50mm guide scope for guiding.
-    \item Software: N.I.N.A for image acquisition and PHD2 guiding software for tracking. AstroImageJ for data analysis and Siril for aligning the images.
+    \item Software: N.I.N.A for image acquisition and PHD2 guiding software for tracking. AstroImageJ \cite{AstroImageJ} for data analysis and Siril \cite{Siril} for aligning the images.
     \item Light Pollution: Montpellier, Bortle 7 (suburban/urban transition) location with moderate light pollution.
 \end{itemize}
 
@@ -152,8 +152,8 @@ You can see that next to each star there is a number, this is the magnitude of t
 
 \bigskip
 
-I chose manually the stars and took them because they have a known magnitude, allowing the software to guess the magnitude of U Cephei.
-To know the magnitude of those reference stars I used the \href{https://apps.aavso.org/vsp/chart/?star=U+Cep&fov=120.0&maglimit=12.0}{AAVSO website} which is a great tool to get information about stars and their magnitude.
+We chose manually the stars and took them because they have a known magnitude, allowing the software to guess the magnitude of U Cephei.
+To know the magnitude of those reference stars we used the \href{https://apps.aavso.org/vsp/chart/?star=U+Cep&fov=120.0&maglimit=12.0}{AAVSO website} \cite{AAVSO} which is a great tool to get information about stars and their magnitude.
 
 By searching for U Cephei you basically get a chart of the star and the stars around it, with their magnitude, which is very useful to pick the right stars for the study.
 
@@ -173,12 +173,12 @@ It's important to note something else in the \ref{fig:cleaned_data} image, we se
 
 \medskip
 
-After cleaning the data I wanted to see if it was possible to detect the transit event just by creating a video of the frames.
-Since this eclipse variation of magnitude is so important I felt like it could be visible enough.
+After cleaning the data we wanted to see if it was possible to detect the transit event just by creating a video of the frames.
+Since this eclipse variation of magnitude is so important we felt like it could be visible enough.
 
 \bigskip
 
-Using a python script I converted each of the fit file into a grayscale png and then was able to use the ffmpeg library to create a video of the frames.
+Using a python script we converted each of the fit file into a grayscale png and then was able to use the ffmpeg library to create a video of the frames.
 The result is available \href{https://youtube.com/shorts/rVnEccCb3Aw}{here}.
 
 In it we can cleary see the star getting dimmer until the frame 150 and then brighter again, this is the transit event happening.
@@ -211,7 +211,7 @@ We also can notive a small gap in the data around the meridian flip since this i
 
 \subsection{Comparative Analysis}
 
-To validate the reliability of the amateur observations, I conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission.
+To validate the reliability of the amateur observations, we conducted a comparative analysis with professional data from the Transiting Exoplanet Survey Satellite (TESS) mission \cite{TESS}.
 
 \begin{figure}[H]
     \centering
@@ -220,7 +220,7 @@ To validate the reliability of the amateur observations, I conducted a comparati
     \label{fig:tess-data-comparison}
 \end{figure}
 
-This graphs shows the light curve of U Cephei from the TESS data in blue and the amateur data I collected in orange. 
+This graphs shows the light curve of U Cephei from the TESS data in blue and the amateur data we collected in orange. 
 Both curves display a parabolic similar shape. The TESS data light curve actually being a bit brighter, starting around 6.85 and lowering to almost 8.25 than the amateur one, starting at 7.75 and lowering to 8.75.
 
 \begin{figure}[H]
@@ -236,12 +236,14 @@ This is another light curve comparison very similar to the previous one, but thi
 
 \section{Discussion}
 
-\subsection{Figure 1}
+\subsection{Interpretation of the U Cephei Light Curve}
 
 After our data has been collected and prepared we can plot a light curve which is a graph showing the variation of the flux of the star over time.
 On the x axis we will have the time of the observation in Julian Date (JD), and on the y axis we have the relative flux of the stars.
 
-To understand a bit more those scales I think it is important to take the time to explain each of them.
+This light curve is displayed in the figure \ref{fig:light_curve} figure.
+
+To understand a bit more those scales we think it is important to take the time to explain each of them.
 \begin{itemize}
     \item Relative flux: In astronomy the light emited by a star is measured in flux, which is the amount of light received per unit area. Here we are dealing with \textit{normalized relative flux}. 
     The relative flux is basically the flux of a star compared to other, it is very important in out case because of some pertubations that could affect the light received by the camera, such as clouds, or the moon or the atmosphere.
@@ -264,14 +266,16 @@ Only 2 comparision stars are showcased on this graph, but in reality 7 comparisi
 and normalized around 1, which is a good sign that the data is reliable. The pertubations on the light curves can be explained by the fact that the stars are not at the same altitude in the sky, and that the atmosphere can affect the light received by the camera, as well as the fact
 this data is collected by an amateur setup.
 
-\subsection{Figure 2}
-One thing we see when looking at those light curves is the fact they are not overlapping. This can be explained because TESS is in space and doesn't have to deal with the atmosphere, making the star looks brighter. It could also be explained by the fact
+\subsection{Comparative Analysis of amateur and professional data}
+
+
+As described in the figure \ref{fig:tess-data-comparison}, one thing we see when looking at those light curves is the fact they are not overlapping. This can be explained because TESS is in space and doesn't have to deal with the atmosphere, making the star looks brighter. It could also be explained by the fact
 TESS sensor is more sensitive than the one used in this study, making the star looks brighter. This is why the data is not overlapping, but the transit event is still clearly visible on both light curves.
 
-\subsection{Figure 3}
+\subsubsection{Comparative Analysis with magnitude shift}
 
-To have a better comparison I shifted the amateur data by -0.5, this way both light curves are overlapping. This shift allows us to see that the light curves are following the same path but that the amateur data is just a bit dimmer than the TESS data.
-The variation of magnitude is different which is something I cannot explain. Even if my data is less precise in theory the variation of magnitude should be the same, but it is not the case here.
+To have a better comparison we shifted the amateur data by -0.5 in the figure \ref{fig:tess-data-comparison-shifted}, this way both light curves are overlapping. This shift allows us to see that the light curves are following the same path but that the amateur data is just a bit dimmer than the TESS data.
+The variation of magnitude is different which is something we cannot explain. Even if my data is less precise in theory the variation of magnitude should be the same, but it is not the case here.
 
 This might be explained by a difference of sensitivity of the sensors used, or by the fact that the data was not normalized correctly, but this is something that needs to be investigated further.
 
@@ -301,22 +305,10 @@ therefore we could get data from less polluted areas to see if the difference is
     \textit{Free Astronomical Image Processing Software},
     \url{https://siril.org/}, accessed January 2025.
     
-    \bibitem{AstroImageJ}
-    Collins, K. A., Kielkopf, J. F., Stassun, K. G., Hessman, F. V. (2017). 
-    \textit{AstroImageJ: Image Processing and Photometric Analysis Software for Astronomical Research}.
-    The Astronomical Journal, 153(2), 77.
-    
     \bibitem{LightPollution}
-    International Dark-Sky Association (IDA), 
-    \textit{Understanding Light Pollution}, 
-    \url{https://www.darksky.org}, accessed January 2025.
-    
-    
-    \bibitem{SatellitePhotometry}
-    Guinan, E. F., Engle, S. G., Devinney, E. J. (2014). 
-    \textit{A Satellite Constellation for Photometry and Monitoring of Variable Stars}. 
-    Journal of the American Association of Variable Star Observers, 42, 235. 
-    \url{https://ui.adsabs.harvard.edu/abs/2014JAVSO..42..235G/abstract}, accessed January 2025.
+    Light Pollution Map, 
+    \textit{Interactive Light Pollution Map}, 
+    \url{https://www.lightpollutionmap.info/}, accessed January 2025.
     
     \bibitem{AmateurObservation}
     Mobberley, M. (2010). 
@@ -331,10 +323,9 @@ therefore we could get data from less polluted areas to see if the difference is
     \url{https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6E3175E20C284177D4F534F506B1DD3E/S0252921100092794a.pdf/the-contribution-of-amateur-astronomers-to-the-study-of-variable-stars.pdf}, accessed January 2025.
     
     \bibitem{VariableStar}
-Wikipedia,
-\textit{Variable Star}, 
-\url{https://en.wikipedia.org/wiki/Variable_star}, accessed January 2025.
-
+    Wikipedia,
+    \textit{Variable Star}, 
+    \url{https://en.wikipedia.org/wiki/Variable_star}, accessed January 2025.
     
     \end{thebibliography}
 \end{document}

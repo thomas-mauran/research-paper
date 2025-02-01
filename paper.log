@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  26 JAN 2025 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  1 FEB 2025 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,7 +335,7 @@ Package hyperref Info: Link coloring OFF on input line 19.
 \openout4 = `paper.toc'.
 
  [2]
-<assets/star-transits.jpg, id=129, 647.41875pt x 406.51875pt>
+<assets/star-transits.jpg, id=131, 647.41875pt x 406.51875pt>
 File: assets/star-transits.jpg Graphic file (type jpg)
 <use assets/star-transits.jpg>
 Package pdftex.def Info: assets/star-transits.jpg  used on input line 54.
@@ -346,13 +346,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.70 \subsection
                 {Why U Cephei?} <./assets/star-transits.jpg>] [4]
-<assets/aligned.png, id=149, 1017.8025pt x 571.13374pt>
+
+LaTeX Warning: Citation `AstroImageJ' on page 5 undefined on input line 124.
+
+<assets/aligned.png, id=155, 1017.8025pt x 571.13374pt>
 File: assets/aligned.png Graphic file (type png)
 <use assets/aligned.png>
 Package pdftex.def Info: assets/aligned.png  used on input line 144.
 (pdftex.def)             Requested size: 452.9679pt x 254.18422pt.
- [5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<assets/ucep-stars-mag.png, id=157, 592.614pt x 737.154pt>
+[5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<assets/ucep-stars-mag.png, id=167, 592.614pt x 737.154pt>
 File: assets/ucep-stars-mag.png Graphic file (type png)
 <use assets/ucep-stars-mag.png>
 Package pdftex.def Info: assets/ucep-stars-mag.png  used on input line 165.
@@ -363,7 +366,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.169 
        <./assets/aligned.png>]
-<assets/Measurements.png, id=167, 1055.945pt x 754.82pt>
+<assets/Measurements.png, id=177, 1055.945pt x 754.82pt>
 File: assets/Measurements.png Graphic file (type png)
 <use assets/Measurements.png>
 Package pdftex.def Info: assets/Measurements.png  used on input line 197.
@@ -373,19 +376,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.201 
-       <./assets/ucep-stars-mag.png>]
-<assets/comparison.png, id=175, 1040.688pt x 586.1097pt>
+       <./assets/ucep-stars-mag.png>] [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.215 
+       <./assets/Measurements.png (PNG copy)>]
+<assets/comparison.png, id=191, 1040.688pt x 586.1097pt>
 File: assets/comparison.png Graphic file (type png)
 <use assets/comparison.png>
 Package pdftex.def Info: assets/comparison.png  used on input line 218.
 (pdftex.def)             Requested size: 452.9679pt x 255.1077pt.
- [8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.221 \end{figure}
-                   <./assets/Measurements.png (PNG copy)>]
-<assets/shifted-comparison.png, id=181, 1040.688pt x 586.1097pt>
+<assets/shifted-comparison.png, id=192, 1040.688pt x 586.1097pt>
 File: assets/shifted-comparison.png Graphic file (type png)
 <use assets/shifted-comparison.png>
 Package pdftex.def Info: assets/shifted-comparison.png  used on input line 228.
@@ -399,29 +401,34 @@ l.232
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.260 T
-       his is a great result, it means that the observation was successful a... <./assets/shifted-comparison.png>] [11]
-Underfull \hbox (badness 6173) in paragraph at lines 322--326
+l.257 \end{itemize}
+                    <./assets/shifted-comparison.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
+[]\OT1/cmr/m/n/12 Light Pol-lu-tion Map, \OT1/cmr/m/it/12 In-ter-ac-tive Light Pol-lu-tion Map\OT1/cmr/m/n/12 , []$\OT1/cmtt/m/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 314--318
 []\OT1/cmr/m/n/12 Mobberley, M. (2010). \OT1/cmr/m/it/12 Am-a-teur As-tronomer's Hand-book\OT1/cmr/m/n/12 . Springer, Chap-
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 328--332
+Underfull \hbox (badness 7704) in paragraph at lines 320--324
 \OT1/cmr/m/it/12 of Vari-able Stars\OT1/cmr/m/n/12 . Pro-ceed-ings of the In-ter-na-tional As-tro-nom-i-cal Union,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--332
+Underfull \hbox (badness 10000) in paragraph at lines 320--324
 \OT1/cmr/m/n/12 125, 73. []$\OT1/cmtt/m/n/12 https : / / www . cambridge . org / core / services / aop-[]cambridge-[]core /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--332
+Underfull \hbox (badness 10000) in paragraph at lines 320--324
 \OT1/cmtt/m/n/12 content / view / 6E3175E20C284177D4F534F506B1DD3E / S0252921100092794a . pdf /
  []
 
 
-Overfull \hbox (8.73491pt too wide) in paragraph at lines 328--332
+Overfull \hbox (8.73491pt too wide) in paragraph at lines 320--324
 \OT1/cmtt/m/n/12 the-[]contribution-[]of-[]amateur-[]astronomers-[]to-[]the-[]study-[]of-[]variable-[]stars .
  []
 
@@ -430,22 +437,26 @@ Overfull \hbox (8.73491pt too wide) in paragraph at lines 328--332
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 37561AA69F15F8BD2FAF5EDE2E461298;3192.
+(rerunfilecheck)             Checksum: 3388E984E688B3818AA67382BF19C560;3801.
  ) 
 Here is how much of TeX's memory you used:
- 9851 strings out of 474122
- 152013 string characters out of 5743967
+ 9848 strings out of 474122
+ 151962 string characters out of 5743967
  1935187 words of memory out of 5000000
- 32043 multiletter control sequences out of 15000+600000
+ 32042 multiletter control sequences out of 15000+600000
  566444 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,535b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (12 pages, 998142 bytes).
+Output written on paper.pdf (12 pages, 996591 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
