@@ -52,7 +52,7 @@ and the challenges inherent in combining data from diverse sources.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{assets/star-transits.jpg}
-    \caption{Transit of binary star system schema and associated light curves.}
+    \caption{Transit of binary star system schema and associated light curves. \cite{VariableStar}}
     \label{fig:transits}
 \end{figure}
 
@@ -60,8 +60,8 @@ and the challenges inherent in combining data from diverse sources.
 Transits are a phenomenon that occurs when a celestial body passes in front of another, partially or totally blocking its light.
 Those events are very interesting for astronomers as they can provide a lot of information about the objects involved, such as their size, mass, and even atmosphere.
 
-The first exoplanet was discovered using the transit method, and it's still one of the most used methods to detect exoplanets.
-One of the way to know if a star is part of a binary system is to observe it and see if it's light intensity varies over time, which can be a sign of a transit event.
+The first exoplanet was discovered using the transit method, and it is still one of the most used methods to detect exoplanets.
+One of the way to know if a star is part of a binary system is to observe it and see if it is light intensity varies over time, which can be a sign of a transit event.
 
 \section{On the U Cephei system}
 
@@ -69,18 +69,16 @@ U Cephei is a very interesting binary star system and a great pick to try catchi
 
 \subsection{Why U Cephei?}
 
-There are multiple reasons why U Cephei is a great candidate for me in this study.
-
 \subsubsection{Period}
 
 First of all U Cephei period is 2.493 days, which is quite short and allows for multiple chances to observe it on a short period of time. 
-Even though this period seems short since it's not exactly 3 days but 2 and a half it means that one observation out of 2 will be at night and the other during the day.
+Even though this period seems short since it is not exactly 3 days but 2 and a half it means that one observation out of 2 will be at night and the other during the day.
 Making observation nights possible every 5 days.
 Considering the fact weather conditions are critical for this field, managing to have a night with good seeing condition can also be a challenge, so having multiple chances to observe the same system is a great advantage.
 
 \subsubsection{Eclipse duration}
 
-Secondly, this system eclipse is short, lasting only a couple of hours it's possible in one night to observe the complete eclipse, which is not the case for all binary systems.
+Secondly, this system eclipse is short, lasting only a couple of hours it is possible in one night to observe the complete eclipse, which is not the case for all binary systems.
 
 \subsubsection{Magnitude variation}
 
@@ -99,7 +97,7 @@ We can right the magnitude variation as a ratio of brightness variation:
     2.512^{9.2-6.7} \approx 10
 \end{equation}
 
-In other words, during the transit, U Cephei will be 10 times dimmer than when it's not in transit. This is a huge variation and makes it easier to detect the transit.
+In other words, during the transit, U Cephei will be 10 times dimmer than when it is not in transit. This is a huge variation and makes it easier to detect the transit.
 
 \subsubsection{Data availability}
 
@@ -127,14 +125,14 @@ We employed the following equipment for the photometric observations of U Cephei
 
 \subsection{Observation Procedure}
 
-\subsection{Cleaning the amateur data}
+The observation procedure involved capturing images of the U Cephei binary star system and its comparison stars over a whole night, taking 20s exposures every 2 minutes.
+The observation was conducted on a clear night of 24th december with good seeing conditions to minimize atmospheric distortion.
 
+\subsection{Cleaning the amateur data}
 
 The first step in analyzing the data is to clean it, this means removing any outliers or bad data points that could affect the results but also in our case making sure our star is aligned on each frame to make the process easier.
 
 \bigskip
-
-% TODO : Add a before and after image of the data cleaning process
 
 Using \href{https://siril.org/fr/}{Siril} which is a free and opensource software for astrophotography, it is very easy to align all the images of the observation to make sure the star is always at the same place in the frame.
 As a comparison here is the same data after the cleaning process:
@@ -142,7 +140,7 @@ As a comparison here is the same data after the cleaning process:
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{assets/aligned.png}
-    \caption{Cleaned data of U Cephei and it's comparison stars used for the study.}
+    \caption{Cleaned data of U Cephei and it is comparison stars used for the study.}
     \label{fig:cleaned_data}
 \end{figure}
 
@@ -163,13 +161,13 @@ By searching for U Cephei you basically get a chart of the star and the stars ar
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{assets/ucep-stars-mag.png}
-    \caption{AAVSO Star chart of U Cephei and neighbors star magnitudes.}
+    \caption{AAVSO Star chart of U Cephei and neighbors star magnitudes.} \cite{AVVSOVariableStarPlotter}
     \label{fig:Ucep-stars-chart}
 \end{figure}
 
 \bigskip
 
-It's important to note something else in the \ref{fig:cleaned_data} image, we see that the frame has been shifted, this is what Siril did to make sure each frame is aligned.
+it is important to note something else in the figure \ref{fig:cleaned_data}, we see that the frame has been shifted, this is what Siril did to make sure each frame is aligned.
 
 \medskip
 
@@ -185,10 +183,19 @@ In it we can cleary see the star getting dimmer until the frame 150 and then bri
 
 \subsection{Professional Data Acquisition}
 
-\subsection{Standardization of Data Formats, light curves and comparative analysis}
+To compare the amateur data with professional observations, we obtained light curves of U Cephei from the Transiting Exoplanet Survey Satellite (TESS) mission \cite{TESS}.
+The TESS data was processed and analyzed using python scripts which are available in this paper git repository \cite{GitRepository}.
+
+One of the most useful tools used during this process was the opensource software \href{https://www.tessextractor.app/}{TESS Extractor} \cite{TessExtractor} which allows to easily extract data from the TESS mission and create light curves.
+
+After the dataset was extracted we were able to compare the amateur data to the professional one, we had to make sure that the data was aligned correctly.
+
+Over the years variations of the period of U Cephei have been observed \cite{CEPU} \cite{PeriodChanges}, which is why we had to choose recent data to make sure the period was the same as the one we observed.
 
 % Results
 \section{Results}
+
+In this part we will present the results of the study, starting with the light curve of U Cephei and then comparing it to the professional data.
 
 \subsection{Light curve}
 
@@ -207,7 +214,6 @@ whereas the flux of U Cephei follows a parabolic curve, starting from 1.5, decre
 We also can notive a small gap in the data around the meridian flip since this is not fully automated yet, the telescope had to be flipped manually, which caused a small gap in the data.
 
 \bigskip
-
 
 \subsection{Comparative Analysis}
 
@@ -231,8 +237,6 @@ Both curves display a parabolic similar shape. The TESS data light curve actuall
 \end{figure}
 
 This is another light curve comparison very similar to the previous one, but this time the amateur data has been shifted by -0.5. 
-
-% This study highlights the potential of amateur astronomers to contribute to the broader astronomical community. By focusing on specific systems like U Cephei, amateurs can provide valuable data to supplement professional observations. Future efforts should aim to enhance equipment calibration techniques and explore automated tools for improving data reliability.
 
 \section{Discussion}
 
@@ -326,6 +330,31 @@ therefore we could get data from less polluted areas to see if the difference is
     Wikipedia,
     \textit{Variable Star}, 
     \url{https://en.wikipedia.org/wiki/Variable_star}, accessed January 2025.
+        
+    \bibitem{AVVSOVariableStarPlotter}
+    AVVSO VariableStarPlotter,
+    \textit{AVVSO VariableStarPlotter}, 
+    \url{https://apps.aavso.org/vsp/chart/?star=U+Cep&fov=120.0&maglimit=12.0}, accessed January 2025.
+        
+    \bibitem{GitRepository}
+    Git Repository,
+    \textit{Git repository}, 
+    \url{https://github.com/thomas-mauran/research-paper}, accessed January 2025.
+
+    \bibitem{TessExtractor}
+    Tess Extractor,
+    \textit{Tess Extractor}, 
+    \url{https://www.tessextractor.app/}, accessed January 2025.
     
+    \bibitem{CEPU}
+    J.M. Kreiner, 2004, Acta Astronomica, vol. 54, pp 207-210,
+    \textit{J.M. Kreiner, 2004, Acta Astronomica, vol. 54, pp 207-210}, 
+    \url{https://www.as.up.krakow.pl/minicalc/CEPU.HTM}, accessed January 2025.
+
+    \bibitem{PeriodChanges}
+    OLSON, E. C., CRAWFORD, R. C., HALL, D. S., LOUTH, H., MARKWORTH, N. L., PIIROLA, V. (1981). FURTHER PERIOD CHANGES IN U CEPHEI. 
+    \textit{Publications of the Astronomical Society of the Pacific}, 93(554), 464–469.  
+    \url{http://www.jstor.org/stable/40677799}, accessed January 2025.
+
     \end{thebibliography}
 \end{document}
