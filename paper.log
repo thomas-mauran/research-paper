@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  4 FEB 2025 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  5 FEB 2025 20:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -349,13 +349,13 @@ l.70 \subsection
 
 LaTeX Warning: Citation `AstroImageJ' on page 5 undefined on input line 122.
 
-<assets/aligned.png, id=152, 1017.8025pt x 571.13374pt>
+<assets/aligned.png, id=153, 1017.8025pt x 571.13374pt>
 File: assets/aligned.png Graphic file (type png)
 <use assets/aligned.png>
 Package pdftex.def Info: assets/aligned.png  used on input line 142.
 (pdftex.def)             Requested size: 452.9679pt x 254.18422pt.
 [5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<assets/ucep-stars-mag.png, id=164, 592.614pt x 737.154pt>
+<assets/ucep-stars-mag.png, id=165, 592.614pt x 737.154pt>
 File: assets/ucep-stars-mag.png Graphic file (type png)
 <use assets/ucep-stars-mag.png>
 Package pdftex.def Info: assets/ucep-stars-mag.png  used on input line 163.
@@ -371,7 +371,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.188 
        <./assets/ucep-stars-mag.png>]
-<assets/Measurements.png, id=189, 1055.945pt x 754.82pt>
+<assets/Measurements.png, id=190, 1055.945pt x 754.82pt>
 File: assets/Measurements.png Graphic file (type png)
 <use assets/Measurements.png>
 Package pdftex.def Info: assets/Measurements.png  used on input line 204.
@@ -382,12 +382,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has
                                                   \__shipout_drop_firstpage_...
 l.211 
        <./assets/Measurements.png (PNG copy)>]
-<assets/comparison.png, id=201, 1040.688pt x 586.1097pt>
+<assets/comparison.png, id=202, 1040.688pt x 586.1097pt>
 File: assets/comparison.png Graphic file (type png)
 <use assets/comparison.png>
 Package pdftex.def Info: assets/comparison.png  used on input line 224.
 (pdftex.def)             Requested size: 452.9679pt x 255.1077pt.
-<assets/shifted-comparison.png, id=202, 1040.688pt x 586.1097pt>
+<assets/shifted-comparison.png, id=203, 1040.688pt x 586.1097pt>
 File: assets/shifted-comparison.png Graphic file (type png)
 <use assets/shifted-comparison.png>
 Package pdftex.def Info: assets/shifted-comparison.png  used on input line 234.
@@ -458,10 +458,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,535b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (12 pages, 1003455 bytes).
+Output written on paper.pdf (12 pages, 1003529 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
+ 333 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
  57 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
